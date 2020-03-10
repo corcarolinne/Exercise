@@ -17,14 +17,21 @@ public class Feed implements FeedInterface {
 		this.feedItemsList = feedItemsList;
 	}
 	
-	// method to get titles
+	// method to list titles of the feed items
 	@Override
 	public Collection<String> listTitles() {
-		// TODO Auto-generated method stub
+		// creating a list to save the titles
 		List<String> titlesList = new ArrayList<String>();
 		
-		//titlesList.add();
-		return null;
+		for(int i = 0; i < feedItemsList.size(); i++) {
+			// accessing title of feed item and saving into a variable
+			String title = this.feedItemsList.get(i).title;
+			
+			// adding this variable to the list
+			titlesList.add(title);
+		}
+		
+		return titlesList;
 		
 	}
 
@@ -54,6 +61,16 @@ public class Feed implements FeedInterface {
 	@Override
 	public Collection<FeedItem> findItems(String keyword) {
 		// TODO Auto-generated method stub
+		// loop through list
+		for (int i = 0; i < feedItemsList.size(); i++) {
+			// if list contain feed items with the given title
+			if(this.feedItemsList.contains(keyword)) {
+				// return the feed
+				return feedItemsList;	
+			} else {
+				return null;
+			}
+		}
 		return null;
 	}
 
