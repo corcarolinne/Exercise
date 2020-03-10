@@ -1,4 +1,4 @@
-package ie.cct.objectorientedconstructs;
+package ie.cct.objectorientedconstructs.s2018250;
 
 public final class FeedItem {
 
