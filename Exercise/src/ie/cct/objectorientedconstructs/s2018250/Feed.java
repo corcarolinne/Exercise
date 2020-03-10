@@ -17,22 +17,38 @@ public class Feed implements FeedInterface {
 		this.feedItemsList = feedItemsList;
 	}
 	
+	// method to get titles
 	@Override
 	public Collection<String> listTitles() {
 		// TODO Auto-generated method stub
+		List<String> titlesList = new ArrayList<String>();
+		
+		//titlesList.add();
 		return null;
+		
 	}
 
+	// method to get items with a given title
 	@Override
 	public FeedItem getItem(String title) {
-		// TODO Auto-generated method stub
+		// loop through list
+		for (int i = 0; i < feedItemsList.size(); i++) {
+			// if list contain feed items with the given title
+			if(this.feedItemsList.contains(title)) {
+				// return the feed
+				return feedItemsList.get(i);	
+			} else {
+				return null;
+			}
+		}
 		return null;
 	}
 
+	// count number of items in the feed list
 	@Override
 	public int numItems() {
-		// TODO Auto-generated method stub
-		return 0;
+		// the feed Items list it's an array list, therefore we can use the build in method size
+		return feedItemsList.size();
 	}
 
 	@Override
