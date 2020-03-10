@@ -1,4 +1,4 @@
-package ie.cct.objectorientedconstructs.s2018250;
+package ie.cct.objectorientedconstructs;
 
 import java.util.Collection;
 

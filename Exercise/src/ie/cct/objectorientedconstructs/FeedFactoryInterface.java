@@ -1,4 +1,4 @@
-package ie.cct.objectorientedconstructs.s2018250;
+package ie.cct.objectorientedconstructs;
 
 import java.io.BufferedReader;
 import java.io.IOException;

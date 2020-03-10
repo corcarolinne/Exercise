@@ -2,6 +2,9 @@ package ie.cct.objectorientedconstructs.s2018250;
 
 import java.util.Collection;
 
+import ie.cct.objectorientedconstructs.FeedInterface;
+import ie.cct.objectorientedconstructs.FeedItem;
+
 public class Feed implements FeedInterface {
 
 	@Override
