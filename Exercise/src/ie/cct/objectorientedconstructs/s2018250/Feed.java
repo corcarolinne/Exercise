@@ -2,6 +2,7 @@ package ie.cct.objectorientedconstructs.s2018250;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import ie.cct.objectorientedconstructs.FeedInterface;
 import ie.cct.objectorientedconstructs.FeedItem;
@@ -9,10 +10,10 @@ import ie.cct.objectorientedconstructs.FeedItem;
 public class Feed implements FeedInterface {
 	
 	// properties
-	private ArrayList<FeedInterface> feedItemsList;
+	private List<FeedItem> feedItemsList;
 	
 	//constructor
-	public Feed(ArrayList<FeedInterface> feedItemsList) {
+	public Feed(List<FeedItem> feedItemsList) {
 		this.feedItemsList = feedItemsList;
 	}
 	

@@ -10,15 +10,17 @@ import ie.cct.objectorientedconstructs.s2018250.FeedFactory;
 public class FeedReader {
 	
 	public static void main(String[] args) throws IOException {
-	
-		// This will produce an error until you create your own class
-		// FeedFactory and fix the import at line 7 
+		
+		// creating a new feed factory
 		FeedFactoryInterface factory = new FeedFactory();
     
+		// saving the file name
+		String file = "exercise/test.txt";
 		
-		String file = "test.rss";
+		// creating a buffered reader to read the file
 		BufferedReader in = new BufferedReader(new FileReader(file));
     
+		// creates a feed using the method from feed factory
 		FeedInterface feed = factory.createFeed(in);
     
 		System.out.println("=== News items ===");
